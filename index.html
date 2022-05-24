@@ -4,24 +4,38 @@
     <title>Loan Calculator</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <style>
+        button {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 0px;
+            opacity: 75%;
+        }
+        button:hover {
+            cursor: pointer;
+            opacity: 100%;
+            background-color: rgb(177,233,20);
+        }
+    </style>
 </head>
 <body>
     <main>
         <h1>Loan Calculator</h1>
         <p>
-            <input id="amount" type="number"> 
+            <input id="amount" type="number" required> 
             <span>Amount ($)</span>
         </p>
         <p> 
-            <input id="rate" type="number">
+            <input id="rate" type="number" required>
             <span>Interest Rate %</span>
         </p>
         <p>
-            <input id="months" type="number">
+            <input id="months" type="number" required>
             <span> Month to Pay</span>
         </p>
-        <h2 id="total"></h2>
+        <button>Calculate</button>
+        <h2 id="total">Please enter loan details</h2>
     </main>
     <script src="index.js"></script>
 </body>
